@@ -94,22 +94,216 @@ export default function Home({ navigation, route }) {
     }}>
 
 
+    {/* HEADER */}
+
+    <View style={{padding:10, flexDirection:"row", justifyContent:'space-between'}}>
+    <View style={{padding:10, backgroundColor:'white'}}>
+
+    </View>
+
+    <View style={{}}>
+        <TouchableNativeFeedback>
+          <View style={{flexDirection:"row"}}>
+          <Text style={{
+            fontFamily: fonts.primary[600],
+            textAlign:'center',
+            top: 5
+          }}>
+            Logout
+          </Text>
+            <Image source={require('../../assets/logout.png')} style={{
+                height:30,
+                width:30,
+
+              }}/>
+          </View>
+        </TouchableNativeFeedback>
+    </View>
+    </View>
+
+    {/* END HEADER */}
 
 
+  {/* MAIN CONTENT */}
+
+  {/* GAYA BELAJAR VARK */}
+  <View style={{padding:10, marginTop:20}}>
+  <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:10,}}>
+        
+              <Text style={{
+                color:'white',
+                fontFamily:fonts.primary[400],
+                fontSize: MyDimensi / 3.1
+
+              }}>
+              Gaya belajar anda adalah  gabungan. (VARK)
+              </Text>
+
+  </View>
+  </View>
 
 
+  {/* SKOR  */}
+  <View style={{padding:10, marginTop:10}}>
+  <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:10,}}>
+        
+              <Text style={{
+                color:'white',
+                fontFamily:fonts.primary[400],
+                fontSize: MyDimensi / 3.5
 
-      
+              }}>
+            Skor anda sebagai berikut :
+              </Text>
 
-      
 
-     
-      {/* header */}
-      <MyCarouser />
+              <Text style={{
+                color:'white',
+                fontFamily: fonts.primary[400],
+                fontSize: MyDimensi / 4.1
+              }}>
+                Visual :
+              </Text>
 
+
+              <Text style={{
+                color:'white',
+                fontFamily: fonts.primary[400],
+                fontSize: MyDimensi / 4.1
+              }}>
+               Aural/ auditorik :
+              </Text>
+
+
+              <Text style={{
+                color:'white',
+                fontFamily: fonts.primary[400],
+                fontSize: MyDimensi / 4.1
+              }}>
+                Pembaca/ penulis teks :
+              </Text>
+
+
+              <Text style={{
+                color:'white',
+                fontFamily: fonts.primary[400],
+                fontSize: MyDimensi / 4.1
+              }}>
+                Kinestetik :
+              </Text>
+
+
+              
+
+  </View>
+
+  <Text style={{
+                color:'black',
+                fontFamily: fonts.primary[400],
+                fontSize: MyDimensi / 4.1,
+                marginTop:20,
+              }}>
+           Gunakan panduan di bawah ini yang sesuai dengan gaya belajar anda :
+              </Text>
+
+
+              {/* MAIN MENU */}
+              <View style={{marginTop:20}}>
+              {/* MENU YANG DI ATAS  */}
+              <View style={{marginTop:10,}}>
+
+                <View style={{flexDirection:"row", justifyContent:'space-around'}}>
+
+              {/* VISUAL  */}
+                <TouchableNativeFeedback onPress={() => navigation.navigate('BelajarVisual')}>
+                  <View style={{ alignItems:'center'}}> 
+                    <Image source={require('../../assets/iconvisual.png')} style={{
+                      height:80,
+                      width:80,
+                    }}/>
+                    <Text style={{
+                      textAlign:'center',
+                      fontFamily: fonts.primary[400],
+                      fontSize: MyDimensi / 5,
+                      top:10
+                    }}>
+                      Visual
+                    </Text>
+                  </View>
+                </TouchableNativeFeedback>
+
+                {/* AUDIO */}
+                <TouchableNativeFeedback onPress={() => navigation.navigate('BelajarVisualAudio')}>
+                  <View style={{ alignItems:'center'}}>
+                    <Image source={require('../../assets/iconaudio.png')} style={{
+                      height:80,
+                      width:80,
+                    }}/>
+                    <Text style={{
+                      textAlign:'center',
+                      fontFamily: fonts.primary[400],
+                      fontSize: MyDimensi / 5,
+                      top:10,
+                    }}>
+                      Audio
+                    </Text>
+                  </View>
+                </TouchableNativeFeedback>
+                </View>
+
+              </View>
+
+                  <MyGap jarak={30}/>
+
+                {/* MENU YANG DI BAWAH  */}
+                <View style={{}}>
+
+<View style={{flexDirection:"row", justifyContent:'space-around'}}>
+
+{/* READING / WRITING  */}
+<TouchableNativeFeedback onPress={() => navigation.navigate('BelajarReading')} style={{alignContent:'center', alignItems:"center"}}>
+  <View style={{  alignItems:'center'}}>
+    <Image source={require('../../assets/iconreadung.png')} style={{
+      height:80,
+      width:80,
     
+    }}/>
+    <Text style={{
+      textAlign:'center',
+      fontFamily: fonts.primary[400],
+      fontSize: MyDimensi / 5,
+      top:10
+    }}>
+      Reading/{'\n'}Writing
+    </Text>
+  </View>
+</TouchableNativeFeedback>
+
+{/* KINAESTHETIC */}
+<TouchableNativeFeedback onPress={() => navigation.navigate('BelajarKinaesthetic')}>
+  <View style={{ alignItems:'center'}}>
+    <Image source={require('../../assets/iconkinaesthetic.png')} style={{
+      height:80,
+      width:80,
+    }}/>
+    <Text style={{
+      textAlign:'center',
+      fontFamily: fonts.primary[400],
+      fontSize: MyDimensi / 5,
+      top:10
+    }}>
+      Kinaesthetic
+    </Text>
+  </View>
+</TouchableNativeFeedback>
+</View>
+
+</View>
+ </View>
+  </View>
 
 
+  {/* END MAIN CONTENT */}
 
     </SafeAreaView >
   )

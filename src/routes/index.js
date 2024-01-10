@@ -23,6 +23,14 @@ import {
   StatusGiziHasil,
   Kursioner,
   KursionerVark,
+  GayaBelajarVisual,
+  HasilBelajarVisual,
+  GayaBelajarAudio,
+  HasilBelajarAudio,
+  GayaBelajarReading,
+  HasilBelajarReading,
+  GayaBelajarKinaesthetic,
+  HasilBelajarKinaesthetic,
 
 
 } from '../pages';
@@ -39,9 +47,6 @@ const MainApp = () => {
   return (
     <Tab.Navigator initialRouteName='Produk' tabBar={props => <BottomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home} />
-
-      <Tab.Screen name="TanyaJawab" component={TanyaJawab} />
-      <Tab.Screen name="Notifikasi" component={Notifikasi} />
       <Tab.Screen name="Account" component={Account} />
     </Tab.Navigator>
   );
@@ -49,7 +54,7 @@ const MainApp = () => {
 
 export default function Router() {
   return (
-    <Stack.Navigator initialRouteName='KursionerVark'>
+    <Stack.Navigator initialRouteName='MainApp'>
       <Stack.Screen
         name="Splash"
         component={Splash}
@@ -105,6 +110,81 @@ export default function Router() {
         }}
       />
 
+<Stack.Screen
+        name="BelajarVisual"
+        component={GayaBelajarVisual}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+<Stack.Screen
+        name="HasilBelajarVisual"
+        component={HasilBelajarVisual}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+<Stack.Screen
+        name="BelajarVisualAudio"
+        component={GayaBelajarAudio}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+<Stack.Screen
+        name="HasilBelajarAudio"
+        component={HasilBelajarAudio}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+      
+<Stack.Screen
+        name="BelajarReading"
+        component={GayaBelajarReading}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+
+<Stack.Screen
+        name="HasilBelajarReading"
+        component={HasilBelajarReading}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+
+<Stack.Screen
+        name="BelajarKinaesthetic"
+        component={GayaBelajarKinaesthetic}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+
+<Stack.Screen
+        name="HasilBelajarKinaesthetic"
+        component={HasilBelajarKinaesthetic}
+        options={{
+          headerShown: false,
+
+        }}
+      />
 
       <Stack.Screen
         name="Account"

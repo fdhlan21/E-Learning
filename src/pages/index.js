@@ -19,6 +19,15 @@ import StatusGizi from './Menu/StatusGizi';
 import StatusGiziHasil from './Menu/StatusGiziHasil';
 import Kursioner from './Kursioner';
 import KursionerVark from './KursionerVark';
+import GayaBelajarVisual from './BelajarVisual';
+import HasilBelajarVisual from './HasilBelajarVisual';
+import GayaBelajarAudio from './BelajarAudiotorik';
+import HasilBelajarAudio from './HasilBelajarAudiorik';
+import GayaBelajarReading from './BealajarReading';
+import HasilBelajarReading from './HasilBelajarReading';
+import GayaBelajarKinaesthetic from './BelajarKinasesthetic';
+import HasilBelajarKinaesthetic from './HasilBelajarKinaesthetic';
+
 
 
 
@@ -32,6 +41,16 @@ export {
   Register,
   Kursioner,
   KursionerVark,
+  GayaBelajarVisual,
+  HasilBelajarVisual,
+  GayaBelajarAudio,
+  HasilBelajarAudio,
+  GayaBelajarReading,
+  HasilBelajarReading,
+  GayaBelajarKinaesthetic,
+  HasilBelajarKinaesthetic,
+  
+
   Account,
   AccountEdit,
   Konten,
